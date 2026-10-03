@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: learning-path-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: learnpath
+      POSTGRES_PASSWORD: learnpath
+      POSTGRES_DB: learnpath
+    ports:
+      - "5432:5432"
+    volumes:
+      - learning_path_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  learning_path_postgres_data:

@@ -1,0 +1,199 @@
+# ============================================================
+
+# Environment & Secrets
+
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# Frontend environment files
+
+frontend/.env.local
+frontend/.env.*.local
+!frontend/.env.local.example
+
+# ============================================================
+
+# Python
+
+# ============================================================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+venv/
+.venv/
+env/
+ENV/
+
+# Python packaging
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test / coverage
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Type checking / linting
+
+.mypy_cache/
+.pyre/
+.ruff_cache/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# ============================================================
+
+# FastAPI / Backend
+
+# ============================================================
+
+backend/.env
+backend/venv/
+backend/.venv/
+
+# Local SQLite databases, if used during development
+
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================================
+
+# Node / Next.js
+
+# ============================================================
+
+node_modules/
+
+# Next.js
+
+.next/
+out/
+
+# Production build
+
+build/
+
+# npm logs
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript
+
+*.tsbuildinfo
+
+# ============================================================
+
+# IDE / Editors
+
+# ============================================================
+
+.vscode/
+.idea/
+
+# VS Code local settings
+
+*.code-workspace
+
+# JetBrains
+
+*.iml
+
+# ============================================================
+
+# Operating System
+
+# ============================================================
+
+.DS_Store
+Thumbs.db
+
+# Linux temporary files
+
+*~
+
+# Windows temporary files
+
+*.tmp
+
+# ============================================================
+
+# Logs
+
+# ============================================================
+
+*.log
+logs/
+
+# ============================================================
+
+# Docker
+
+# ============================================================
+
+# Docker override files are usually local-only
+
+docker-compose.override.yml
+
+# ============================================================
+
+# Local Data / Generated Files
+
+# ============================================================
+
+# Uploaded/generated local datasets
+
+data/
+datasets/
+
+# Generated embeddings / model artifacts
+
+embeddings/
+models/
+artifacts/
+
+# Local exports
+
+exports/
+
+# Temporary files
+
+tmp/
+temp/
+
+# ============================================================
+
+# Security
+
+# ============================================================
+
+# Private keys / certificates
+
+*.pem
+*.key
+*.crt
+
+# Credentials
+
+credentials.json
+service-account.json
+secrets.json
